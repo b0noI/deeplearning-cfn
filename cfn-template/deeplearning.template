@@ -20,6 +20,9 @@
         "p2.16xlarge",
         "p2.8xlarge",
         "p2.xlarge",
+        "p3.2xlarge",
+        "p3.8xlarge",
+        "p3.16xlarge",
         "g2.8xlarge",
         "g2.2xlarge",
         "t2.small",
@@ -107,18 +110,22 @@
   },
   "Mappings" : {
     "AmazonLinux" : {
-      "us-east-1"      : { "AMI" : "ami-4b44745d"  },
-      "us-east-2"      : { "AMI" : "ami-305d7c55"  },
-      "us-west-2"      : { "AMI" : "ami-296e7850"  },
-      "eu-west-1"      : { "AMI" : "ami-d36386aa"  },
-      "ap-southeast-2" : { "AMI" : "ami-52332031"  }
+      "us-east-1"      : { "AMI" : "ami-4716b23d"  },
+      "us-east-2"      : { "AMI" : "ami-ee86aa8b"  },
+      "us-west-2"      : { "AMI" : "ami-aa19d6d2"  },
+      "eu-west-1"      : { "AMI" : "ami-f8e54081"  },
+      "ap-southeast-2" : { "AMI" : "ami-0eb9566c"  }
+      "ap-northeast-1" : { "AMI" : "ami-c08223a6"  }
+      "ap-northeast-2" : { "AMI" : "ami-c53a9fab"  }
     },
     "Ubuntu" : {
-      "us-east-1"      : { "AMI" : "ami-2edccb38"  },
-      "us-east-2"      : { "AMI" : "ami-2797b642"  },
-      "us-west-2"      : { "AMI" : "ami-7fd7c906"  },
-      "eu-west-1"      : { "AMI" : "ami-19896660"  },
-      "ap-southeast-2" : { "AMI" : "ami-b32b37d0"  }
+      "us-east-1"      : { "AMI" : "ami-5af95d20"  },
+      "us-east-2"      : { "AMI" : "ami-ceb39fab"  },
+      "us-west-2"      : { "AMI" : "ami-b8c807c0"  },
+      "eu-west-1"      : { "AMI" : "ami-9b32e8e2"  },
+      "ap-southeast-2" : { "AMI" : "ami-d156bab3"  }
+      "ap-northeast-1" : { "AMI" : "ami-683c9906"  }
+      "ap-northeast-2" : { "AMI" : "ami-343a9c52"  }
     },
     "SubnetConfig" : {
       "VPC"     : { "CIDR" : "10.0.0.0/16" },
