@@ -6,7 +6,15 @@ With this template, we continue with our mission to make [distributed deep learn
 ## What's New?  
 We've updated the AWS CloudFormation Deep Learning template to add some exciting new features and capabilities.
 
+### Mar 22 2018
+
 * We now support 10 AWS regions - us-east-1, us-west-2, eu-west-1, us-east-2, ap-southeast-2, ap-northeast-1, ap-northeast-2, ap-south-1, eu-central-1,ap-southeast-1.
+
+* We now supports p3 instances.
+
+### Older Release Notes
+
+* We now support 5 AWS regions - us-east-1, us-east-2, us-west-2, eu-west-1 and ap-southeast-2.
 
 *  We've enhanced the AWS CloudFormation Deep Learning template with automation that continues stack creation even if the provisioned number of worker instances falls short of the desired count. In the previous version of the template, if one of the worker instances failed to be provisioned, for example, if it a hit account limit, AWS CloudFormation rolled back the stack and required you to adjust your desired count and restart the stack creation process. The new template includes a function that automatically adjusts the count down and proceeds with setting up the rest of the cluster (stack).  
 
