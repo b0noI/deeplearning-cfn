@@ -148,7 +148,7 @@
       "ap-northeast-2" : { "URL" : "https://s3-ap-northeast-2.amazonaws.com/" },
       "ap-south-1" : { "URL" : "https://s3-ap-south-1.amazonaws.com/" },
       "eu-central-1" : { "URL" : "https://s3-eu-central-1.amazonaws.com/" },
-      "ap-southeast-1" : { "URL" : "https://s3-p-southeast-1.amazonaws.com/" }
+      "ap-southeast-1" : { "URL" : "https://s3-ap-southeast-1.amazonaws.com/" }
     },
     "Other" : {
       "S3SourceBucket" : { "BucketNameSuffix" : "-aws-dl-cfn" },
@@ -168,7 +168,7 @@
         "Role": { "Fn::GetAtt" : ["LambdaExecutionRole", "Arn"] },
         "Code": {
             "S3Bucket":  {"Fn::Join" : ["", [{ "Ref" : "AWS::Region" }, { "Fn::FindInMap" : [ "Other", "S3SourceBucket", "BucketNameSuffix" ]} ] ]},
-            "S3Key": { "Fn::FindInMap" : [ "Other", "LambdaFunction", "FileName" ]},
+            "S3Key": { "Fn::FindInMap" : [ "Other", "LambdaFunction", "FileName" ]}
           },
           "MemorySize" : "256",
           "Timeout": "60",
