@@ -10,7 +10,7 @@ We've updated the AWS CloudFormation Deep Learning template to add some exciting
 
 * We now support 10 AWS regions - us-east-1, us-west-2, eu-west-1, us-east-2, ap-southeast-2, ap-northeast-1, ap-northeast-2, ap-south-1, eu-central-1,ap-southeast-1.
 
-* We now supports p3 instances.
+* We now support p3 instances.
 
 ### Older Release Notes
 
